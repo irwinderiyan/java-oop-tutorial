@@ -1,3 +1,3 @@
 # Bab 3, Access Modifier, Static Modifier & Overloading Method
 
-tba
+Bab ini membahas tentang penggunaan access modifier, static, dan overloading method.
