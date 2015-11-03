@@ -60,7 +60,7 @@ public void belok() {
 }
 ```
 
-...adalah bagian aksi dari obyek. Obyek tersebut bisa melakukan apa saja? Maka dari itu kita perlu method supaya obyek dapat melakukan aksi yang diinginkan.
+...adalah bagian aksi dari obyek. Obyek tersebut bisa melakukan apa saja? Maka dari itu kita perlu method supaya obyek dapat melakukan aksi yang diinginkan. Method-method ini biasa disebut sebagai **instance method**.
 
 Bingung cara membuat class? Silakan belajar kembali materi-materi Pemrograman Dasar, karena membuat file class baru sudah diajarkan di Progdas.
 
