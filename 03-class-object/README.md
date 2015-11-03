@@ -1,3 +1,3 @@
 # Bab 4, Class & Object
 
-tba
+Bab ini membahas tentang class dan object, serta implementasinya ke dalam kode Java.
