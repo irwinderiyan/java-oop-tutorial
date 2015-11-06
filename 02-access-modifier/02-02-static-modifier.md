@@ -76,4 +76,4 @@ Akan menghasilkan output, bisa dilihat [disini](http://ideone.com/FLxEzW)
 16
 ```
 
-**PERLU DIINGAT!** Atribut/method `static` tidak bisa dipanggil dari non `static`. 
+**PERLU DIINGAT!** Atribut/method non `static` tidak bisa dipanggil dari `static`. 
