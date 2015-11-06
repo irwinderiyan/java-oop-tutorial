@@ -34,4 +34,6 @@ public class Warga {
 }
 ```
 
-Terlihat dalam kode diatas, pada class `Warga` memiliki atribut bertipe `Alamat`. Nah, maka relasi yang tepat menggambarkan kondisi diatas adalah, `Warga memiliki Alamat`. Relasi agregasi biasa disebut sebagai relasi `has a`.
+Terlihat dalam kode diatas, pada class `Warga` memiliki atribut bertipe `Alamat`. Nah, relasi yang tepat menggambarkan kondisi diatas adalah, `Warga memiliki Alamat`. Relasi agregasi biasa disebut sebagai relasi `has a`.
+
+Namun dalam contoh diatas, class `Alamat` tidak memiliki relasi dengan `Warga`. Dengan kata lain, `Warga` memiliki `Alamat`, dan `Alamat` bisa saja tidak memiliki `Warga`.
