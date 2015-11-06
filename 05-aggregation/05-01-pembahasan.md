@@ -37,3 +37,17 @@ public class Warga {
 Terlihat dalam kode diatas, pada class `Warga` memiliki atribut bertipe `Alamat`. Nah, relasi yang tepat menggambarkan kondisi diatas adalah, `Warga memiliki Alamat`. Relasi agregasi biasa disebut sebagai relasi `has a`.
 
 Namun dalam contoh diatas, class `Alamat` tidak memiliki relasi dengan `Warga`. Dengan kata lain, `Warga` memiliki `Alamat`, dan `Alamat` bisa saja tidak memiliki `Warga`.
+
+## Mengapa menggunakan Agregasi? ##
+
+Jawabannya sederhana, supaya kita tidak menulis kode berulang-ulang. Misalkan ada relasi seperti ini...
+
+```
+Warga memiliki Alamat
+Siswa memiliki Alamat
+Pekerja memiliki Alamat
+```
+
+...tentunya kita tidak ingin mendeklarasikan tiap atribut di class `Alamat` di class `Warga`, `Siswa`, maupun `Pekerja`, kan?
+
+Maka dari itu, agregasi digunakan bertujuan untuk *code reusability* atau penggunaan kode yang ditulis sekali untuk digunakan berulang-ulang.
