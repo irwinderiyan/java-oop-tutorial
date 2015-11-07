@@ -1,3 +1,3 @@
 # Bab 8, Interface
 
-tba
+Bab ini berisi tentang penggunaan dan pengimplementasian interface di Java.
