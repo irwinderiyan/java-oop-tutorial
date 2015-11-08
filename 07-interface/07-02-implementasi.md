@@ -32,6 +32,7 @@ public class Car implements Movement {
     public void setColor(String color) { this.color = color; }
     public String getBrand() { return this.brand; }
     public String getColor() { return this.color; }
+    public int getSpeed() { return this.speed; }
 
     // jangan lupa untuk mengimplementasikan SEMUA method dari interface.
     public void increaseOrDecreaseSpeed(int speed) { this.speed += speed; }
@@ -75,7 +76,6 @@ public class SportCar extends Car implements EnhancedMovement {
 
     private String[] equipmentList;
     private int lastIndex = -1;
-    private int speed, gear;
 
     public void initEquipmentCount(int x) {
         equipmentList = new String[x];
@@ -98,13 +98,12 @@ public class SportCar extends Car implements EnhancedMovement {
     }
 
     // jangan lupa untuk mengimplementasikan SEMUA method dari interface.
-    public void increaseOrDecreaseSpeed(int speed) { this.speed += speed; }
-    public void setGear(int gear) { this.gear = gear; }
     public void activateNitro(boolean toggle) {
         if (!toggle) {
-            this.speed -= SportCar.INCREASE_SPEED_WITH_NITRO;
+            // kata kunci super digunakan untuk mengakses properti dari superclass.
+            super.increaseOrDecreaseSpeed(-1 * SportCar.INCREASE_SPEED_WITH_NITRO);
         } else {
-            this.speed += SportCar.INCREASE_SPEED_WITH_NITRO;
+            super.increaseOrDecreaseSpeed(SportCar.INCREASE_SPEED_WITH_NITRO);
         }
     }
 
@@ -116,4 +115,35 @@ public class SportCar extends Car implements EnhancedMovement {
     }
 
 }
+```
+
+Jika dijalankan memakai main class...
+
+#### CarMain.java ####
+
+```java
+class CarMain {
+    public static void main(String[] args) {
+
+        SportCar sc = new SportCar();
+        sc.setBrand("BMW");
+        sc.setColor("Black");
+        sc.initEquipmentCount(3);
+        sc.addEquipment("Nitrous System");
+        sc.addEquipment("High end audio system");
+        sc.addEquipment("Enhanced Radiators");
+        sc.increaseOrDecreaseSpeed(40);
+        System.out.println(sc.getSpeed());
+        sc.activateNitro(true);
+        System.out.println(sc.getSpeed());
+
+    }
+}
+```
+
+...akan menghasilkan [output](http://ideone.com/ZD7icd)
+
+```
+40
+110
 ```
