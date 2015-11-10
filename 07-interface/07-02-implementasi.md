@@ -4,6 +4,10 @@ Sebenarnya, interface itu hampir mirip dengan class. Namun berbeda.
 
 Interface hanya berisi kerangka method yang siap diimplementasikan di class yang meng-implement interface tersebut. Di dalam interface tidak ada statement sama sekali. Method seperti ini dinamakan abstract method.
 
+Apakah isi interface hanya abstract method saja?
+
+Tidak, interface bisa berisi atribut yang memiliki modifier `final`, alias atribut konstanta.
+
 Untuk membuat interface caranya cukup mudah, buat saja file `.java`, contoh...
 
 #### Movement.java ####
