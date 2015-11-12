@@ -1,3 +1,3 @@
 # Bab 9, Polimorfisme
 
-tba
+Bab ini berisi konsep terkait polimorfisme serta pengimplementasiannya kedalam kode Java.
