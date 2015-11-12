@@ -1,3 +1,3 @@
 # Bab 2, Pengenalan Apache Maven
 
-tba
+Bab ini membahas tentang pengenalan Apache Maven, instalasi, dan penggunaan dasar.
